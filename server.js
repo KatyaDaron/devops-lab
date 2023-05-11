@@ -3,6 +3,7 @@ const app = express();
 const port = 3000;
 
 app.use(express.static('public'));
+app.use(express.static(`${__dirname}`))
 
 const questions = ['What is your name?', 'What is your favorite color?', 'What is your favorite food?'];
 
